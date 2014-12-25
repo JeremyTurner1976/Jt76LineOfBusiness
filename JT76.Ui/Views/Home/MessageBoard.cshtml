@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "The Message Board";
+    ViewBag.InitModule = "homeMessageBoard";
+    ViewBag.RotateText = "Feel free to rant | Only the last 50 messages are saved";
+}
+
+@section FrameworkScripts{
+    <!-- Angular JS -->
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-route.js"></script>
+    <script src="~/Scripts/angular-sanitize.js"></script>
+}
+
+@section Scripts{
+    <script src="~/JT76Scripts/homeMessageBoard.js"></script>
+}
+
+<div data-ng-view=""></div>

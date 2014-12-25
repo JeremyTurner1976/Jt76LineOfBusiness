@@ -1,0 +1,23 @@
+﻿.message {
+  border-radius: 5px;
+  border: 1px solid #888888;
+  background: none repeat scroll #ddcfcf;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.message .title {
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #888888;
+}
+.reply {
+  border-top: 1px solid #888888;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+.reply .created {
+  font-size: 9px;
+  margin-left: 10px;
+  text-shadow: 2px 2px 3px #888888;
+}
+/*# sourceMappingURL=Site.css.map */

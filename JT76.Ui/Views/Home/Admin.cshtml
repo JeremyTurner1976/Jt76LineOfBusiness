@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "The Admin Page";
+    ViewBag.InitModule = "homeAdmin";
+    ViewBag.RotateText = "Run tests | See the latest errors | View logged messages";
+}
+
+
+@section FrameworkScripts{
+    <!-- Angular JS -->
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-route.js"></script>
+    <script src="~/Scripts/angular-sanitize.js"></script>
+}
+
+@section Scripts{
+    <script src="~/JT76Scripts/homeAdmin.js"></script>
+}
+
+<div data-ng-view=""></div>

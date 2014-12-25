@@ -1,0 +1,31 @@
+﻿@BorderColor: #888;
+@MessageColor: #ddcfcf;
+
+.message{
+    border-radius: 5px;
+    border: 1px solid @BorderColor;
+    background : none repeat scroll @MessageColor;
+    padding-right: 25px;
+    padding-left: 25px;
+
+    .title
+    {
+        font-size:22px;
+        font-weight:bold;
+        text-shadow: 2px 2px 4px @BorderColor;
+    }
+}
+
+.reply
+{
+    border-top: 1px solid @BorderColor;
+    margin-top:5px;
+    margin-left:15px;
+
+    .created{
+        font-size:9px;
+        margin-left:10px;
+        text-shadow: 2px 2px 3px @BorderColor;
+    }
+}
+

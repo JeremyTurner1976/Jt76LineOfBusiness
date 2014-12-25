@@ -1,0 +1,40 @@
+﻿p {
+  overflow: auto;
+}
+.transparent {
+  background: rgba(128, 128, 128, 0);
+}
+.jtcontent {
+  border: 2px solid #ad9090;
+  background: none repeat scroll #f1ecec;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(128, 128, 128, 0.91);
+  color: #0026ff;
+}
+.innerjtcontent {
+  border-radius: 6px;
+  border: 1px solid #ad9090;
+  background: none repeat scroll #f8f5f5;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.reply {
+  border-top: 1px solid #ad9090;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+.reply .created {
+  font-size: 12px;
+  margin-left: 10px;
+  text-shadow: 2px 2px 3px #ad9090;
+}
+.error {
+  font-size: 12px;
+  color: crimson;
+}
+/*# sourceMappingURL=Site.css.map */

@@ -1,0 +1,38 @@
+﻿<section id="topicsView" class="section">
+
+    <div class="row innerjtcontent">
+
+        <div class="row">
+            <div>
+                <h2>Message Board</h2>
+                <p class="lead">Latest Messages...</p>
+                <br />
+            </div>
+        </div>
+
+        <div class="progress progress-striped active" data-ng-show="isBusy">
+            <div class="progress-bar" style="width: 100%;"></div>
+        </div>
+
+        <div class="row wow bounceInUp">
+            <div class="col-md-12" data-ng-repeat="i in data.topics">
+                <a class="title" data-ng-href="#/message/{{i.id}}" data-ng-bind-html="i.strTitle"></a>
+                <div class="pull-right" data-ng-bind-html="i.dtCreated | date: ' MMM d, yyyy h:mm:ss a'"></div>
+                <br />
+                <br />
+                <p data-ng-bind-html="i.strBody"></p>
+                <br />
+                <br />
+            </div>
+        </div>
+
+        <div class="row">
+            <a href="#/newMessage" class="btn btn-info btn-lg pull-right">Add New Message</a>
+        </div>
+
+        <div class="row" style="height: 15px">
+        </div>
+
+    </div>
+
+</section>

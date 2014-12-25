@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{62F55EF8-5197-470D-9CD2-DCD704356948}"
+	ProjectSection(SolutionItems) = preProject
+		Jt76ReadMe.txt = Jt76ReadMe.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JT76.Common", "JT76.Common\JT76.Common.csproj", "{FF020B2C-42EB-45CC-A7D1-4C5D768BB5BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JT76.Data", "JT76.Data\JT76.Data.csproj", "{88C6A16A-1B40-4629-939B-6D2A2F80F499}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JT76.Ui", "JT76.Ui\JT76.Ui.csproj", "{9854BEF8-573C-4274-8AC0-C948E85E5F41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JT76.Tests", "JT76.Tests\JT76.Tests.csproj", "{2E1B3856-223A-44C7-AE41-9A9405892026}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{CDF41D1A-2E7C-424A-8F89-2EC51C8206B2}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF020B2C-42EB-45CC-A7D1-4C5D768BB5BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF020B2C-42EB-45CC-A7D1-4C5D768BB5BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF020B2C-42EB-45CC-A7D1-4C5D768BB5BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF020B2C-42EB-45CC-A7D1-4C5D768BB5BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88C6A16A-1B40-4629-939B-6D2A2F80F499}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88C6A16A-1B40-4629-939B-6D2A2F80F499}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88C6A16A-1B40-4629-939B-6D2A2F80F499}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88C6A16A-1B40-4629-939B-6D2A2F80F499}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9854BEF8-573C-4274-8AC0-C948E85E5F41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9854BEF8-573C-4274-8AC0-C948E85E5F41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9854BEF8-573C-4274-8AC0-C948E85E5F41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9854BEF8-573C-4274-8AC0-C948E85E5F41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E1B3856-223A-44C7-AE41-9A9405892026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E1B3856-223A-44C7-AE41-9A9405892026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E1B3856-223A-44C7-AE41-9A9405892026}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E1B3856-223A-44C7-AE41-9A9405892026}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

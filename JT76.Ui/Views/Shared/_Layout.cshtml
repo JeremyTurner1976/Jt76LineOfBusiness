@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html data-ng-app=@ViewBag.InitModule>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>@ViewBag.Title - JT76</title>
+    
+        <meta name="description" content="Base Site">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="~/Content/Images/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="~/Content/Images/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="~/Content/Images/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="~/Content/Images/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" sizes="196x196" href="~/Content/Images/touch/touch-icon-196x196.png">
+        <link rel="shortcut icon" href="~/Content/Images/touch/apple-touch-icon.png">
+
+        <!-- Tile icon for Win8 (144x144 + tile color) -->
+        <meta name="msapplication-TileImage" content="~/Content/Images/touch/apple-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileColor" content="#222222">
+
+        <!-- SEO: If mobile URL is different from desktop URL, add a canonical link to the desktop page -->
+        <!--<link rel="canonical" href="http://www.example.com/" >-->
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+
+        <!-- For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="">
+
+        <!-- CSS -->
+        <!-- Bootstrap core CSS -->
+        <link href="~/Content/bootstrap.min.css" rel="stylesheet" media="screen">
+        <!-- Owl Carousel -->
+        <link href="~/Content/owl.theme.min.css" rel="stylesheet">
+        <link href="~/Content/owl.carousel.min.css" rel="stylesheet">
+        <!-- Magnific-popup lightbox -->
+        <link href="~/Content/magnific-popup.min.css" rel="stylesheet">
+        <!-- Simple text rotator -->
+        <link href="~/Content/simpletextrotator.min.css" rel="stylesheet">
+        <!-- Font Awesome CSS -->
+        <link href="~/Content/font-awesome.min.css" rel="stylesheet" media="screen">
+        <!-- Animate css -->
+        <link href="~/Content/animate.min.css" rel="stylesheet">
+        <!-- Custom styles CSS -->
+        <link href="~/Content/JTCss/style.css" rel="stylesheet" media="screen">
+        <link href="~/Content/JTCss/Site.css" rel="stylesheet" />
+
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+            <!-- Preloader -->
+
+            <div id="preloader">
+                <div id="status">
+                    <div class="status-mes"><h4>Loading</h4></div>
+                </div>
+            </div>
+
+            <!-- Scroll-up -->
+
+            <div class="scroll-up">
+                <a href="#intro"><i class="fa fa-angle-up"></i></a>
+            </div>
+
+            <!-- Navigation start -->
+
+            <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+
+                <div class="container">
+
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        @Html.ActionLink("JT76", "Index", "Home", new {@class = "navbar-brand"})
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="custom-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("Components", "Components", "Home")</li>
+                            <li>@Html.ActionLink("Message Board", "MessageBoard", "Home")</li>
+                            <li>@Html.ActionLink("Admin", "Admin", "Home")</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </nav>
+
+            <!-- Navigation end -->
+
+            <!-- Intro section start -->
+
+            <section id="intro" class="section">
+
+                <div class="container">
+
+                    <div class="row">
+
+                        <div class="col-md-12">
+
+                            <div class="hello wow bounceInDown">
+                                <h4>Welcome to</h4>
+                                <h1>@ViewBag.Title</h1>
+                                <h3><span class="rotate">@ViewBag.RotateText</span></h3>
+                            </div>
+
+                        </div>
+
+                    </div><!-- .row -->
+
+                </div><!-- .container -->
+
+            </section>
+
+            <!-- Intro section end -->
+            <!-- Body section start -->
+
+            <section id="body" class="jtcontent">
+
+                <div class="row">
+
+                    <div class="col-md-12">
+
+                        @RenderBody()
+
+                    </div>
+
+                </div><!-- .row -->
+
+            </section>
+
+            <!-- Body section end -->
+            <!-- Footer start -->
+
+            <footer id="footer">
+
+                <div class="container">
+
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <p class="copy">
+                                © 2014 JT76, All Rights Reserved.
+                            </p>
+                        </div>
+
+                    </div><!-- .row -->
+
+                </div><!-- .container -->
+
+            </footer>
+
+            <!-- Footer end -->
+
+        </div><!-- .wrapper -->
+        <!-- Javascript files -->
+        <!-- jQuery -->
+        <script src="~/Scripts/jquery-1.11.0.js"></script>
+        <!-- Per Page Scripts - JS Frameworks -->
+        @RenderSection("FrameworkScripts", false)
+        <!-- Bootstrap JS -->
+        <script src="~/Scripts/bootstrap.js"></script>
+        <!-- Background slider -->
+        <script src="~/Scripts/jquery.backstretch.js"></script>
+        <!-- OwlCarousel -->
+        <script src="~/Scripts/owl.carousel.js"></script>
+        <!-- Knob -->
+        <script src="~/Scripts/jquery.knob.js"></script>
+        <!-- Modal for portfolio -->
+        <script src="~/Scripts/jquery.magnific-popup.js"></script>
+        <!-- Text rotator -->
+        <script src="~/Scripts/jquery.simple-text-rotator.js"></script>
+        <!-- Waypoints -->
+        <script src="~/Scripts/jquery.waypoints.js"></script>
+        <!-- WOW - Reveal Animations When You Scroll -->
+        <script src="~/Scripts/wow.js"></script>
+        <!-- Smooth scroll -->
+        <script src="~/Scripts/smoothscroll.js"></script>
+        <!-- Resp. video -->
+        <script src="~/Scripts/jquery.fitvids.js"></script>
+        <!-- Custom scripts -->
+        <script src="~/JT76Scripts/custom.js"></script>
+        <!-- Common scripts -->
+        <script src="~/JT76Scripts/jtcommon.js"></script>
+        <!-- Per Page Scripts - Angular Modules -->
+        @RenderSection("scripts", false)
+
+    </body>
+</html>

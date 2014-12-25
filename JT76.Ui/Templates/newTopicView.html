@@ -1,0 +1,48 @@
+﻿<section id="newTopicView" class="section">
+
+    <div class="container">
+
+        <div class="row">
+            
+            <a href="#/" class="btn btn-primary pull-left">Back</a>
+            <br />
+
+            <div class="innerjtcontent row wow bounceInLeft">
+                <br />
+                <br />
+                <form name="newTopicForm" novalidate data-ng-submit="save()">
+                    <h3>New Topic</h3>
+                    <fieldset>
+                        <div>
+                            <label for="title" style="width:100%">Title</label>
+                            <input style="width:50%" name="title" type="text" data-ng-model="newTopic.strTitle" required data-ng-minlength="1" data-ng-maxlength="100"/>
+                            <span class="error" data-ng-show="newTopicForm.title.$error.required"> - Required</span>
+                            <span class="error" data-ng-show="newTopicForm.title.$error.minlength"> - Minimum 5 Characters</span>
+                            <span class="error" data-ng-show="newTopicForm.title.$error.maxlength"> - Maximum 100 Characters</span>
+                        </div>
+                        <div>
+                            <label for="body">Message</label>
+                            <span class="error" data-ng-show="newTopicForm.body.$error.required"> - Required</span>
+                            <span class="error" data-ng-show="newTopicForm.body.$error.minlength"> - Minimum 15 Characters</span>
+                            <span class="error" data-ng-show="newTopicForm.body.$error.maxlength"> - Maximum 2000 Characters</span>
+                            <textarea name="body" rows="5" data-ng-model="newTopic.strBody" required data-ng-minlength="15" data-ng-maxlength="2000"></textarea>
+                        </div>
+                        <br />
+                        <div>
+                            <input type="submit" class="btn btn-primary" value="save" data-ng-disabled="newTopicForm.$invalid" />
+                            <a href="#/" class="btn btn-default">Cancel</a>
+                            <span class="error" data-ng-bind-html="strNewTopicValidation"> - Required</span>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <div class="row" style="height: 15px">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

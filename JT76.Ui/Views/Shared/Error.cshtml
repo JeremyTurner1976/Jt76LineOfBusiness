@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "The Admin Page";
+    ViewBag.InitModule = "";
+    ViewBag.RotateText = "Error Occurred | This will be fixed shortly";
+}
+
+<section id="errorView" class="section">
+
+    <div class="color-overlay">
+
+        <div class="container">
+
+            <div class="innerjtcontent row wow bounceInLeft">
+                <h2>Error.</h2>
+                <h3>An error occurred.</h3>
+                <h4>
+                    @Html.Raw(@ViewBag.strError)
+                </h4>
+            </div>
+        </div>
+    </div>
+</section>

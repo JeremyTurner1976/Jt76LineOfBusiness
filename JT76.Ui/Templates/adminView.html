@@ -1,0 +1,88 @@
+﻿<!-- Nav tabs -->
+<ul class="nav nav-pills">
+    <li><a id="VisibilityLink" data-toggle="tab" href="#Errors" class="active">Errors</a></li>
+    <li><a id="VisibilityLink" data-toggle="tab" href="#LogMessages">LogMessages</a></li>
+</ul>
+
+<br />
+
+<div class="tab-content">
+
+    <div id="Errors" class="tab-pane active">
+        
+        <div class="row innerjtcontent">
+
+            <h2>Errors</h2>
+            <p class="lead">Latest Error Sets...</p>
+                
+            <form name="simulateErrorForm" novalidate data-ng-submit="simulateError()">
+                <fieldset>
+                    <div>
+                        <input type="submit" class="btn btn-primary" value="Simulate an Error" data-ng-disabled="simulateErrorForm.$invalid" />
+                    </div>
+                </fieldset>
+            </form>
+            
+            <div class="progress progress-striped active" data-ng-show="errorsAreBusy">
+                <div class="progress-bar" style="width: 100%;"></div>
+            </div>
+            <br />
+            <br />
+            <br />
+
+
+            <div class="col-md-12" data-ng-repeat="i in data.errors">
+                <p class="pull-right" data-ng-bind-html="i.dtCreated | date: 'MMM d, yyyy h:mm:ss a'"></p>
+                <h3 class="title" data-ng-bind-html="i.strMessage"></h3>
+                <h5 data-ng-bind-html="i.strSource+' '+i.strErrorLevel"></h5>
+                <h5 data-ng-bind-html="i.strAdditionalInformation"></h5>
+                <h5 data-ng-bind-html="i.strStackTrace"></h5>
+                <br />
+
+                <br />
+                <br />
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="LogMessages" class="tab-pane">
+
+        <div class="row innerjtcontent">
+
+            <h2>Log Messages</h2>
+            <p class="lead">Latest Log Messages...</p>
+
+            <form name="simulateLogMessageForm" novalidate data-ng-submit="simulateLogMessage()">
+                <fieldset>
+                    <div>
+                        <input type="submit" class="btn btn-primary" value="Simulate a Log Message" data-ng-disabled="simulateLogMessageForm.$invalid" />
+                        <br />
+                        <br />
+                        <br />
+                    </div>
+                </fieldset>
+            </form>
+
+            <div class="progress progress-striped active" data-ng-show="logMessagesAreBusy">
+                <div class="progress-bar" style="width: 100%;"></div>
+            </div>
+
+            <div class="col-md-12" data-ng-repeat="i in data.logMessages">
+                <p data-ng-bind-html="i.dtCreated | date: 'MMM d, yyyy h:mm:ss a'"></p>
+                <h4 data-ng-bind-html="i.strLogMessage"></h4>
+                <br />
+                <br />
+                <br />
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<br />
+<br />
+<br />

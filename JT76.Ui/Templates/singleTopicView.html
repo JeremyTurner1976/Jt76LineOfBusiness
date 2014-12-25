@@ -1,0 +1,58 @@
+﻿<section id="singleTopicView" class="section">
+
+    <div class="container">
+
+        <div class="row">
+
+            <a href="#/" class="btn btn-primary pull-left">Back</a>
+            <br />
+
+            <div class="innerjtcontent row wow bounceInLeft">
+                <br />
+                <br />
+                <br />
+                <h4 class="title" data-ng-bind-html="topic.strTitle"></h4>
+                <div data-ng-bind-html="topic.dtCreated | date: 'MMM d, yyyy h:mm:ss a'"></div>
+                <p class="col-md-12" data-ng-bind-html="topic.strBody"></p>
+                <br />
+                <br />
+                <div class="replies col-md-12">
+                    <div class="reply" data-ng-repeat="r in topic.replies">
+                        <br />
+                        <div data-ng-bind-html="r.dtCreated | date: 'MMM d, yyyy h:mm:ss a'"></div>
+                        <p data-ng-bind-html="r.strBody"></p>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+            <br />
+            
+            <div class="innerjtcontent row wow bounceInRight">
+                <form name="newReplyForm" novalidate data-ng-submit="addReply()">
+                    <h3>Add Reply</h3>
+                    <fieldset>
+                        <div>
+                            <label for="body">Message</label>
+                            <span class="error" data-ng-show="newReplyForm.body.$error.required"> - Required</span>
+                            <span class="error" data-ng-show="newReplyForm.body.$error.minlength"> - Minimum 15 Characters</span>
+                            <span class="error" data-ng-show="newTopicForm.body.$error.maxlength"> - Maximum 2000 characters</span>
+                            <textarea name="body" rows="5" cols="30" data-ng-model="newReply.body" required data-ng-minlength="15" data-ng-maxlength="2000"></textarea>
+                        </div>
+                        <br />
+                        <div>
+                            <input type="submit" class="btn btn-primary" value="save" data-ng-disabled="newReplyForm.$invalid" />
+                            <a href="#/" class="btn btn-default">Cancel</a>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <div class="row" style="height: 15px">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
