@@ -176,6 +176,28 @@
     <Compile Include="ViewModels\MessageBoardViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AngularApp\admin\admin.html" />
+    <Content Include="AngularApp\admin\admin.js" />
+    <Content Include="AngularApp\app.js" />
+    <Content Include="AngularApp\common\bootstrap\bootstrap.dialog.js" />
+    <Content Include="AngularApp\common\common.js" />
+    <Content Include="AngularApp\common\logger.js" />
+    <Content Include="AngularApp\common\spinner.js" />
+    <Content Include="AngularApp\config.exceptionHandler.js" />
+    <Content Include="AngularApp\config.js" />
+    <Content Include="AngularApp\config.route.js" />
+    <Content Include="AngularApp\dashboard\dashboard.html" />
+    <Content Include="AngularApp\dashboard\dashboard.js" />
+    <Content Include="AngularApp\layout\shell.html" />
+    <Content Include="AngularApp\layout\shell.js" />
+    <Content Include="AngularApp\layout\sidebar.html" />
+    <Content Include="AngularApp\layout\sidebar.js" />
+    <Content Include="AngularApp\layout\topnav.html" />
+    <Content Include="AngularApp\layout\widgetheader.html" />
+    <Content Include="AngularApp\services\datacontext.js" />
+    <Content Include="AngularApp\services\directives.js" />
+    <Content Include="AngularApp\services\entityManagerFactory.js" />
+    <Content Include="ccfavicon.ico" />
     <Content Include="Content\animate.css" />
     <Content Include="Content\animate.min.css">
       <DependentUpon>animate.css</DependentUpon>
@@ -192,6 +214,47 @@
     <Content Include="Content\font-awesome.min.css">
       <DependentUpon>font-awesome.css</DependentUpon>
     </Content>
+    <Content Include="Content\icon.png" />
+    <Content Include="Content\Images\Photos\aaron_skonnard.jpg" />
+    <Content Include="Content\Images\Photos\brad_green.jpg" />
+    <Content Include="Content\Images\Photos\colleen_papa.jpg" />
+    <Content Include="Content\Images\Photos\craig_shoemaker.jpg" />
+    <Content Include="Content\Images\Photos\dan_wahlin.jpg" />
+    <Content Include="Content\Images\Photos\dave_ward.jpg" />
+    <Content Include="Content\Images\Photos\elijah_manor.jpg" />
+    <Content Include="Content\Images\Photos\eric_barnard.jpg" />
+    <Content Include="Content\Images\Photos\esteban_garcia.jpg" />
+    <Content Include="Content\Images\Photos\felix_fanboi.jpg" />
+    <Content Include="Content\Images\Photos\fritz_onion.jpg" />
+    <Content Include="Content\Images\Photos\glenn_block.jpg" />
+    <Content Include="Content\Images\Photos\hans_fjallemark.jpg" />
+    <Content Include="Content\Images\Photos\howard_dierking.jpg" />
+    <Content Include="Content\Images\Photos\igor_minar.jpg" />
+    <Content Include="Content\Images\Photos\jason_salmond.jpg" />
+    <Content Include="Content\Images\Photos\jesse_liberty.jpg" />
+    <Content Include="Content\Images\Photos\jim_cowart.jpg" />
+    <Content Include="Content\Images\Photos\john_papa.jpg" />
+    <Content Include="Content\Images\Photos\john_smith.jpg" />
+    <Content Include="Content\Images\Photos\john_sonmez.jpg" />
+    <Content Include="Content\Images\Photos\julie_lerman.jpg" />
+    <Content Include="Content\Images\Photos\keith_sparkjoy.jpg" />
+    <Content Include="Content\Images\Photos\mads_kristensen.jpg" />
+    <Content Include="Content\Images\Photos\megan_russell.jpg" />
+    <Content Include="Content\Images\Photos\mike_callaghan.jpg" />
+    <Content Include="Content\Images\Photos\mike_woodring.jpg" />
+    <Content Include="Content\Images\Photos\pete_brown.jpg" />
+    <Content Include="Content\Images\Photos\rey_bango.jpg" />
+    <Content Include="Content\Images\Photos\rob_eisenberg.jpg" />
+    <Content Include="Content\Images\Photos\ryan_niemeyer.jpg" />
+    <Content Include="Content\Images\Photos\scott_guthrie.jpg" />
+    <Content Include="Content\Images\Photos\scott_hanselman.jpg" />
+    <Content Include="Content\Images\Photos\scott_hunter.jpg" />
+    <Content Include="Content\Images\Photos\shawn_wildermuth.jpg" />
+    <Content Include="Content\Images\Photos\steve_sanderson.jpg" />
+    <Content Include="Content\Images\Photos\sue_menot.jpg" />
+    <Content Include="Content\Images\Photos\tim_heuer.jpg" />
+    <Content Include="Content\Images\Photos\unknown_person.jpg" />
+    <Content Include="Content\Images\Photos\ward_bell.jpg" />
     <Content Include="Content\Images\touch\apple-touch-icon-114x114-precomposed.png" />
     <Content Include="Content\Images\touch\apple-touch-icon-144x144-precomposed.png" />
     <Content Include="Content\Images\touch\apple-touch-icon-57x57-precomposed.png" />
@@ -201,6 +264,8 @@
     <Content Include="Content\Images\touch\touch-icon-128x128.png" />
     <Content Include="Content\Images\touch\touch-icon-196x196.png" />
     <Content Include="Content\Images\touch\touch-icon-60x60.png" />
+    <Content Include="Content\JTCss\lineOfBusinessCustomTheme.css" />
+    <Content Include="Content\JTCss\lineOfBusinessStyles.css" />
     <Content Include="Content\magnific-popup.css" />
     <Content Include="Content\magnific-popup.min.css">
       <DependentUpon>magnific-popup.css</DependentUpon>
@@ -227,6 +292,8 @@
     <Content Include="Content\JTCss\style.min.css">
       <DependentUpon>style.css</DependentUpon>
     </Content>
+    <Content Include="Content\toastr.css" />
+    <Content Include="Content\toastr.min.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\JTCss\Site.css.map">
@@ -304,6 +371,8 @@
     <Content Include="Scripts\jquery.knob.js" />
     <Content Include="Scripts\errors.json" />
     <Content Include="packages.config" />
+    <Content Include="Content\toastr.scss" />
+    <Content Include="Content\toastr.less" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery-1.11.0.js" />
     <Content Include="Scripts\jquery.backstretch.js" />
@@ -314,9 +383,16 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.waypoints.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\moment-with-locales.js" />
+    <Content Include="Scripts\moment-with-locales.min.js" />
+    <Content Include="Scripts\moment.js" />
+    <Content Include="Scripts\moment.min.js" />
     <Content Include="Scripts\owl.carousel.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\smoothscroll.js" />
+    <Content Include="Scripts\toastr.js" />
+    <Content Include="Scripts\toastr.min.js" />
+    <Content Include="Scripts\ui-bootstrap-tpls-0.10.0.js" />
     <Content Include="Scripts\wow.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Templates\adminView.html" />
@@ -339,6 +415,7 @@
     <Content Include="Views\Home\MessageBoard.cshtml" />
     <Content Include="Scripts\version.json" />
     <Content Include="Views\Home\Admin.cshtml" />
+    <Content Include="Views\Home\LineOfBusiness.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

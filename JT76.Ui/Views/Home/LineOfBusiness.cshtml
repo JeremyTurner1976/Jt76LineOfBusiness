@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "The Line of Business Page";
+    ViewBag.InitModule = "app";
+    ViewBag.RotateText = "Access and Alter Data | See Angular In Action | Sample App";
+}
+
+
+@section FrameworkScripts{
+    <!-- Angular JS -->
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-animate.js"></script>
+    <script src="~/Scripts/angular-route.js"></script>
+    <script src="~/Scripts/angular-sanitize.js"></script>
+
+    <script src="~/Scripts/toastr.js"></script>
+    <script src="~/Scripts/moment.js"></script>
+    <script src="~/Scripts/ui-bootstrap-tpls-0.10.0.js"></script>
+}
+
+@section Scripts{
+    <!-- Bootstrapping -->
+    <script src="~/AngularApp/app.js"></script>
+    <script src="~/AngularApp/config.js"></script>
+    <script src="~/AngularApp/config.exceptionHandler.js"></script>
+    <script src="~/AngularApp/config.route.js"></script>
+
+    <!-- common Modules -->
+    <script src="~/AngularApp/common/common.js"></script>
+    <script src="~/AngularApp/common/logger.js"></script>
+    <script src="~/AngularApp/common/spinner.js"></script>
+
+    <!-- common.bootstrap Modules -->
+    <script src="~/AngularApp/common/bootstrap/bootstrap.dialog.js"></script>
+
+    <!-- app -->
+    <script src="~/AngularApp/admin/admin.js"></script>
+    <script src="~/AngularApp/dashboard/dashboard.js"></script>
+    <script src="~/AngularApp/layout/shell.js"></script>
+    <script src="~/AngularApp/layout/sidebar.js"></script>
+
+    <!-- app Services -->
+    <script src="~/AngularApp/services/datacontext.js"></script>
+    <script src="~/AngularApp/services/directives.js"></script>
+}
+
+
+    <div data-ng-include="'/AngularApp/layout/shell.html'"></div>
+    @*<div id="splash-page" data-ng-show="false">
+        <div class="page-splash">
+            <div class="page-splash-message">
+                Hot Towel Angular
+            </div>
+            <div class="progress progress-striped active page-progress-bar">
+                <div class="bar"></div>
+            </div>
+        </div>
+    </div>*@
+

@@ -634,7 +634,7 @@ a,
     background: rgba(34, 34, 34, .2) !important;
     padding: 260px 0 160px 0;
     text-align: center;
-    z-index: auto !important;
+    /*z-index: auto !important;*/
 }
 
 #intro,

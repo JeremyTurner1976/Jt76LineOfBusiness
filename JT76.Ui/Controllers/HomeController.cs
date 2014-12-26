@@ -42,5 +42,12 @@ namespace JT76.Ui.Controllers
 
             return View();
         }
+
+        public ActionResult LineOfBusiness()
+        {
+            Debug.WriteLine(GetType().FullName + "." + MethodBase.GetCurrentMethod().Name);
+
+            return View();
+        }
     }
 }

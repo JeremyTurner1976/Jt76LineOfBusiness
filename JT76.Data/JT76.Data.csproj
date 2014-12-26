@@ -32,6 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Breeze.ContextProvider">
+      <HintPath>..\packages\Breeze.Server.ContextProvider.1.5.2\lib\Breeze.ContextProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="Breeze.ContextProvider.EF6">
+      <HintPath>..\packages\Breeze.Server.ContextProvider.EF6.1.5.2\lib\Breeze.ContextProvider.EF6.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -40,6 +46,10 @@
     </Reference>
     <Reference Include="Faker.NET4">
       <HintPath>..\packages\Faker.Net.1.0.3\lib\net40\Faker.NET4.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -54,18 +64,27 @@
     <Compile Include="Abstract\ModelBase.cs" />
     <Compile Include="Abstract\ModelRepositoryBase.cs" />
     <Compile Include="CustomAttributes.cs" />
+    <Compile Include="Database\AttendanceConfiguration.cs" />
     <Compile Include="Database\JTDbContext.cs" />
     <Compile Include="Database\JTMigrationsContext.cs" />
     <Compile Include="Database\ModelRepositories\ErrorRepository.cs" />
+    <Compile Include="Database\ModelRepositories\LineOfBusinessRepository.cs" />
     <Compile Include="Database\ModelRepositories\LogMessageRepository.cs" />
     <Compile Include="Database\ModelRepositories\ReplyRepository.cs" />
     <Compile Include="Database\ModelRepositories\TopicRepository.cs" />
+    <Compile Include="Database\SessionConfiguration.cs" />
     <Compile Include="Factories\ErrorFactory.cs" />
     <Compile Include="Factories\JtMockFactory.cs" />
+    <Compile Include="Models\Attendance.cs" />
     <Compile Include="Models\Error.cs" />
     <Compile Include="Models\LogMessage.cs" />
+    <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Reply.cs" />
+    <Compile Include="Models\Room.cs" />
+    <Compile Include="Models\Session.cs" />
+    <Compile Include="Models\TimeSlot.cs" />
     <Compile Include="Models\Topic.cs" />
+    <Compile Include="Models\Track.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

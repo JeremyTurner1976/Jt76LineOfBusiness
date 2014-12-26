@@ -190,6 +190,35 @@ namespace JT76.Data.Factories
             return topicList.AsQueryable();
         }
 
+        //public static IQueryable<Track> GetTrackMocks()
+        //{
+        //    var itemOne = new Track
+        //    {
+        //        StrLogMessage = GetFakerParagraphs(1)
+        //    };
+        //    var logMessageTwo = new LogMessage
+        //    {
+        //        StrLogMessage = GetFakerParagraphs(2)
+        //    };
+        //    var logMessageThree = new LogMessage
+        //    {
+        //        StrLogMessage = GetFakerParagraphs(3)
+        //    };
+
+        //    var logMessageList = new List<LogMessage> { logMessageOne, logMessageTwo, logMessageThree };
+
+        //    int count = 1;
+        //    foreach (LogMessage item in logMessageList)
+        //    {
+        //        item.Id = count++;
+        //        item.DtCreated = DateTime.UtcNow;
+        //    }
+
+        //    return logMessageList.AsQueryable();
+        //}
+
+
+
         public static string GetFakerParagraphs(int nParagraphCount)
         {
             //return Faker.Lorem.Paragraphs(nParagraphCount).Aggregate("", (current, item) => current + (item + Environment.NewLine));

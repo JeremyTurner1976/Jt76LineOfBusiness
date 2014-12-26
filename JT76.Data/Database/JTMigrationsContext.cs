@@ -61,6 +61,15 @@ namespace JT76.Data.Database
 
                 context.SaveChanges();
             }
+
+            //if (!context.LogMessages.Any())
+            //{
+            //    var logMessageList = JtMockFactory.GetLogMessageMocks();
+            //    foreach (var logMessage in logMessageList)
+            //        context.LogMessages.Add(logMessage);
+
+            //    context.SaveChanges();
+            //}
 #endif
         }
     }

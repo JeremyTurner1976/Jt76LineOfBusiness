@@ -2,6 +2,7 @@
 using System.Data.Entity;
 using System.Data.Entity.Core.Objects;
 using System.Data.Entity.Infrastructure;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Diagnostics;
 using System.Reflection;
 using JT76.Data.Models;
@@ -42,12 +43,19 @@ namespace JT76.Data.Database
         }
 
         //This will force some of the db constraints to be parts of the model
-        //for db first migrations, code first is used here
-        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        //{
-        //    //this will set the max length of the property the same as it is on the db
-        //    modelBuilder.Properties<string>().Configure(p => p.IsMaxLength());
-        //}
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            //this will set the max length of the property the same as it is on the db
+            //modelBuilder.Properties<string>().Configure(p => p.IsMaxLength());
+
+            // Use singular table names
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+
+            modelBuilder.Configurations.Add(new SessionConfiguration());
+            modelBuilder.Configurations.Add(new AttendanceConfiguration());
+        }
+
+
 
         //Message Board
         public virtual DbSet<Topic> Topics { get; set; }
@@ -58,5 +66,15 @@ namespace JT76.Data.Database
 
         //LogMessage
         public virtual DbSet<LogMessage> LogMessages { get; set; }
+
+        //Angular Line of Business
+        public DbSet<Session> Sessions { get; set; }
+        public DbSet<Person> Persons { get; set; }
+        public DbSet<Attendance> Attendance { get; set; }
+
+        // Lookup Lists
+        public DbSet<Room> Rooms { get; set; }
+        public DbSet<TimeSlot> TimeSlots { get; set; }
+        public DbSet<Track> Tracks { get; set; }
     }
 }
